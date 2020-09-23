@@ -25,6 +25,12 @@
 			<div class="covid19ranking covid-radius" data-country="USA"></div>
 			<script src="https://api.covid19ranking.com/js/covid19ranking.js"></script>
         </div>
+		
+		<div class="grid">
+        	<h2>Search</h2>
+				<input type="text" id="Blah" size="25"> &nbsp;&nbsp;
+				<button onclick="search()">  &nbsp; Google &nbsp;</button>
+        </div>
 
 		<div class="grid">
         	<h2>Favorite</h2>
@@ -106,6 +112,14 @@
         </div>
 	</div>
 </div>
+
+<script>
+	function search() {
+	var Blah = document.getElementById("Blah").value;
+	window.open("https://www.google.com/search?q=" + Blah + "");
+	}
+</script>
+
 <script type="text/javascript">
 	$('.nav').hide();
 	$('#show').click(function (){
