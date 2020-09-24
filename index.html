@@ -46,23 +46,32 @@ $(document).ready(function(){
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:320px;" id="mySidebar"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="images/avatar.jpg" style="width:45%;" class="w3-round"><br><br>
+    <img src="images/avatar.jpg" style="width:48%;" class="w3-round"><br>
     <h4><b>Rexx Home</b></h4>
   </div>
+  
+	<div class="w3-bar-block">
+		<a href="https://printcal.net/website-calendar-widget.php" target="_blank"><img src="https://printcal.net/web-calendar.png?size=m&w=s&ho=04&mo=00&so=-1" alt="Printcal.net Calendar Widget" ></a>
+	</div>
+  <br>
+  
   <div class="w3-bar-block">
 	<link rel="stylesheet" type="text/css" href="https://api.covid19ranking.com/css/covid19ranking-widget.css"/>
 	<div class="covid19ranking covid-radius" data-country="USA"></div>
 	<script src="https://api.covid19ranking.com/js/covid19ranking.js"></script>
   </div>
-  <div class="w3-panel w3-large">
+  <br>
+  
+  <div class="w3-bar-block">
 	<input type="text" id="Blah" size="25"><br>
 	<button onclick="search()">  &nbsp; Google &nbsp;</button>
   </div>
+  <br>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
