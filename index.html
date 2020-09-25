@@ -56,6 +56,7 @@ $(document).ready(function(){
   </div>
   
 	<div class="w3-bar-block">
+		<p style="color:blue">&nbsp;&nbsp;<script type="text/JavaScript" src="script/navCal.js"></script></p>
 		<a href="https://printcal.net/website-calendar-widget.php" target="_blank"><img src="https://printcal.net/web-calendar.png?size=m&w=s&ho=04&mo=00&so=-1" alt="Printcal.net Calendar Widget" ></a>
 	</div>
   <br>
@@ -68,8 +69,8 @@ $(document).ready(function(){
   <br>
   
   <div class="w3-bar-block">
-	<input type="text" id="Blah" size="25"><br>
-	<button onclick="search()">  &nbsp; Google &nbsp;</button>
+	&nbsp;<input type="text" id="Blah" size="25"><br>
+	&nbsp;<button onclick="search()">  &nbsp; Google &nbsp;</button>
   </div>
   <br>
 </nav>
@@ -86,22 +87,23 @@ $(document).ready(function(){
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
   </header>
   
-  <!-- 1st Photo Grid-->
+  <!-- start of page content right section -->
   <div class="w3-row-padding">
   
-	<!-- Image Header -->
+	<!-- Image & Weather -->
 	<div class="w3-row-padding">
 		<img src="images/mainpic.jpg" alt="mainphoto" style="width:100%">
 		<a class="weatherwidget-io" href="https://forecast7.com/en/42d36n71d06/boston/" data-label_1="BOSTON" data-label_2="weather" data-days="5" data-theme="beige" >BOSTON weather</a>
 		<script>
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 		</script>
-   </div>
-   <br>
+	</div>
+	<br>
+	<!-- End of Image & Weather -->
    
+	<!-- all logo list -->
 	<div id="wrap">
-      <div class="content">
-
+	  <div class="content">
 		<div class="grid">
         	<ul>
             	<li><a href="https://rexxboston.github.io/lotusland" target="_blank"><img src="images/lland.jpg" alt="Img">Lotus Land</a></li>
@@ -111,7 +113,8 @@ $(document).ready(function(){
 				<li><a href="https://www.google.com/maps" target="_blank"><img src="images/google-maps.jpg" alt="Img">Maps</a></li>
 				<li><a href="https://drive.google.com/drive" target="_blank"><img src="images/google-drive.jpg" alt="Img">Drive</a></li>
 				<li><a href="https://translate.google.com" target="_blank"><img src="images/google-translate.jpg" alt="Img">Translate</a></li>
-            	<li><a href="bookmark.html" target="_blank"><img src="images/bmk.jpg" alt="Img">Bookmark</a></li>
+				<li><a href="https://calendar.google.com" target="_blank"><img src="images/google-calendar.jpg" alt="Img">Calendar</a></li>
+            	
             </ul>
         </div>
 		
@@ -124,8 +127,8 @@ $(document).ready(function(){
             	<li><a href="https://www.wix.com" target="_blank"><img src="images/wix.jpg" alt="Img">WIX</a></li>
             	<li><a href="https://www.w3schools.com/w3css/w3css_templates.asp" target="_blank"><img src="images/w3c.jpg" alt="Img">W3Cschool</a></li>
 				<li><a href="https://templatemo.com" target="_blank"><img src="images/templatemo.jpg" alt="Img">Templatemo</a></li>
-				<li><a href="https://webflow.com" target="_blank"><img src="images/webflow.jpg" alt="Img">WebFlow</a></li>
-            	<!--li><a href="https://getbootstrap.com" target="_blank"><img src="images/bootstrap.jpg" alt="Img">Bootstrap</a></li-->
+				<!--li><a href="https://webflow.com" target="_blank"><img src="images/webflow.jpg" alt="Img">WebFlow</a></li>
+            	<li><a href="https://getbootstrap.com" target="_blank"><img src="images/bootstrap.jpg" alt="Img">Bootstrap</a></li-->
             	<li><a href="https://appinventor.mit.edu" target="_blank"><img src="images/app-ct.jpg" alt="Img" style="border:1px solid gray">AppIVT</a></li>
             </ul>
         </div>
@@ -139,6 +142,7 @@ $(document).ready(function(){
 				<li><a href="https://www.amazon.com" target="_blank"><img src="images/amazon.jpg" alt="Img">Amazon</a></li>
             	<li><a href="https://www.ebay.com" target="_blank"><img src="images/ebay.jpg" alt="Img" style="border:1px solid gray">Ebay</a></li>
             	<li><a href="https://www.1point3acres.com/bbs" target="_blank"><img src="images/sfd.jpg" alt="Img">三分地</a></li>
+				<li><a href="bookmark.html" target="_blank"><img src="images/bmk.jpg" alt="Img">Bookmark</a></li>
             </ul>
         </div>
 		
@@ -177,48 +181,33 @@ $(document).ready(function(){
 				<li><a href="https://rexxdisaronno.wixsite.com/worldtv" target="_blank"><img src="images/wtv.jpg" alt="Img">WTV</a></li>
             </ul>
         </div>
-	</div>
-</div>
-
-  <!-- Contact Section >
-  <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"></div>
-      <h3>Contact</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@email.com</p>
-	  <div>
-		<h4>Timer</h4>
-		Press Here <input type="text">
-		<p>Accomplish <span style="color:blue;font-weight:bold">0</span></p>
 	  </div>
-    </div>
-		<div class="w3-col m7">
-		  <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://formspree.io/trendsmusic2012@gmail.com" target="_blank">
-		  <div class="w3-section">      
-			<label>Name</label>
-			<input class="w3-input" type="text" name="name" required>
-		  </div>
-		  <div class="w3-section">      
-			<label>Email</label>
-			<input class="w3-input" type="text" name="_replyto" required>
-		  </div>
-		  <div class="w3-section">      
-			<label>Message</label>
-			<input class="w3-input" type="text" name="Message" required>
-		  </div>  
-		  <button type="submit" class="w3-button w3-right w3-theme" value="Send">Send</button>
-		  </form>
-		</div>
 	</div>
-	</div> < End of Contact Section -->
+	<!-- end of all logo list -->
+
+	<!-- Contact Section -->
+	<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+		<div class="w3-row">
+			<!-- Contact Left Section -->
+			<div class="w3-col m7">
+				<!-- iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=dHJlbmRzbXVzaWMyMDEyQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=emguZHV0Y2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%2333B679&amp;color=%237986CB" style="border:solid 1px #777" width="90%" height="400" frameborder="0" scrolling="no"></iframe-->
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cmV4eHdreUBnbWFpbC5jb20&amp;src=ZW4uY2hpbmEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=emguY2hpbmEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2333B679&amp;color=%237CB342&amp;color=%237986CB" style="border:solid 1px #777" width="90%" height="400" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<!-- Contact right Section -->
+			<div class="w3-col m5">
+				<h3>Schedule</h3>
+				<div>
+					<p style="color:green">&nbsp;<script type="text/JavaScript" src="script/navCal.js"></script></p>
+					<textarea id="notepad" name="notepad" rows="14" cols="48"> </textarea>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div> 	<!-- End of Contact Section -->
   
-  <div style="text-align:center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-  <br>
-</div>
-<!-- End page content -->
-</div>
+  </div> <!-- End page content -->
+
+</div> <!-- End !PAGE CONTENT! -->
 
 <script>
 // Script to open and close sidebar
