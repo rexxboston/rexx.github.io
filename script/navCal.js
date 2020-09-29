@@ -11,7 +11,7 @@ function initArray(){
    "周四",
    "周五",
    "周六");
-document.write(" ",today.getMonth()+1,"月",today.getDate(),"日 ",d[today.getDay()+1]," ");
+document.write(today.getMonth()+1,"月",today.getDate(),"日 ");
 calendar = new Date();
 month = calendar.getMonth();
 date = calendar.getDate();
