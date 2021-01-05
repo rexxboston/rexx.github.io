@@ -98,7 +98,7 @@ return tmp;
 }
 function GetLunarDay(solarYear,solarMonth,solarDay){
 //solarYear = solarYear<1900?(1900+solarYear):solarYear;
-if(solarYear<1921 || solarYear>2020){
+if(solarYear<1921 || solarYear>2040){
 return "";
 }else{
   solarMonth = (parseInt(solarMonth)>0) ? (solarMonth-1) : 11;
